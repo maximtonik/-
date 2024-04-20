@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'level-window.ui'
+# Form implementation generated from reading ui file 'level_window.ui'
 #
 # Created by: PyQt6 UI code generator 6.6.1
 #
@@ -19,13 +19,6 @@ class Ui_MainWindow1(object):
         MainWindow1.setFont(font)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow1)
         self.centralwidget.setObjectName("centralwidget")
-        self.Exit_to_menu = QtWidgets.QLabel(parent=self.centralwidget)
-        self.Exit_to_menu.setGeometry(QtCore.QRect(10, 10, 41, 41))
-        self.Exit_to_menu.setStyleSheet("")
-        self.Exit_to_menu.setText("")
-        self.Exit_to_menu.setPixmap(QtGui.QPixmap(":/icons/icons/exit_to_app_FILL0_wght400_GRAD0_opsz24.svg"))
-        self.Exit_to_menu.setScaledContents(True)
-        self.Exit_to_menu.setObjectName("Exit_to_menu")
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(240, 130, 341, 361))
         self.label_2.setStyleSheet("background-color: rgba(255,255,255,200);\n"
@@ -42,6 +35,7 @@ class Ui_MainWindow1(object):
         self.label_3.setStyleSheet("background-color: rgba(255,255,255,200);\n"
 "border: 1px solid rgba(255,255,255,70);\n"
 "border-radius: 12px;")
+        self.label_3.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(270, 170, 51, 51))
@@ -118,34 +112,25 @@ class Ui_MainWindow1(object):
         self.pushButton_25 = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_25.setGeometry(QtCore.QRect(390, 410, 51, 51))
         self.pushButton_25.setObjectName("pushButton_25")
-        self.label_2.raise_()
-        self.Exit_to_menu.raise_()
-        self.label_3.raise_()
-        self.pushButton.raise_()
-        self.pushButton_2.raise_()
-        self.pushButton_3.raise_()
-        self.pushButton_4.raise_()
-        self.pushButton_6.raise_()
-        self.pushButton_5.raise_()
-        self.pushButton_7.raise_()
-        self.pushButton_8.raise_()
-        self.pushButton_9.raise_()
-        self.pushButton_10.raise_()
-        self.pushButton_11.raise_()
-        self.pushButton_12.raise_()
-        self.pushButton_13.raise_()
-        self.pushButton_14.raise_()
-        self.pushButton_15.raise_()
-        self.pushButton_16.raise_()
-        self.pushButton_17.raise_()
-        self.pushButton_18.raise_()
-        self.pushButton_19.raise_()
-        self.pushButton_20.raise_()
-        self.pushButton_21.raise_()
-        self.pushButton_22.raise_()
-        self.pushButton_23.raise_()
-        self.pushButton_24.raise_()
-        self.pushButton_25.raise_()
+        self.pushButton_27 = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_27.setGeometry(QtCore.QRect(20, 540, 111, 41))
+        font = QtGui.QFont()
+        font.setFamily("Fixedsys")
+        font.setPointSize(12)
+        self.pushButton_27.setFont(font)
+        self.pushButton_27.setStyleSheet("QPushButton {\n"
+"color: black;\n"
+"background-color: rgba(255,255,255,200);\n"
+"border: 1px solid rgba(255,255,255,70);\n"
+"border-radius: 7px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(255,255,205,70);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"background-color: rgba(255,255,245,80);\n"
+"}")
+        self.pushButton_27.setObjectName("pushButton_27")
         MainWindow1.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow1)
@@ -180,6 +165,7 @@ class Ui_MainWindow1(object):
         self.pushButton_23.setText(_translate("MainWindow1", "21"))
         self.pushButton_24.setText(_translate("MainWindow1", "24"))
         self.pushButton_25.setText(_translate("MainWindow1", "23"))
+        self.pushButton_27.setText(_translate("MainWindow1", "Меню"))
 
 
 if __name__ == "__main__":

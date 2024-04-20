@@ -85,7 +85,7 @@ background-color: rgba(255,255,245,80);
 </string>
     </property>
     <property name="text">
-     <string>Выход</string>
+     <string>Правила игры</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -107,13 +107,48 @@ background-color: rgba(255,255,245,80);
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>420</y>
+      <width>241</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Fixedsys</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: black;
+background-color: rgba(255,255,255,200);
+border: 1px solid rgba(255,255,255,70);
+border-radius: 7px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,205,70);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,245,80);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Выход</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
   </widget>
  </widget>
  <resources>
-  <include location="res-rc.qrc"/>
+  <include location="res_rc.qrc"/>
  </resources>
  <connections/>
 </ui>

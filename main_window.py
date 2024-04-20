@@ -67,9 +67,30 @@ class Ui_MainWindow(object):
         self.label.setPixmap(QtGui.QPixmap("icons/b94371ba97483cbfa1643d7905f3b01b.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.pushButton_3 = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(280, 420, 241, 81))
+        font = QtGui.QFont()
+        font.setFamily("Fixedsys")
+        font.setPointSize(12)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"color: black;\n"
+"background-color: rgba(255,255,255,200);\n"
+"border: 1px solid rgba(255,255,255,70);\n"
+"border-radius: 7px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(255,255,205,70);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"background-color: rgba(255,255,245,80);\n"
+"}\n"
+"")
+        self.pushButton_3.setObjectName("pushButton_3")
         self.label.raise_()
         self.pushButton.raise_()
         self.pushButton_2.raise_()
+        self.pushButton_3.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -79,7 +100,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Переливание"))
         self.pushButton.setText(_translate("MainWindow", "Играть"))
-        self.pushButton_2.setText(_translate("MainWindow", "Выход"))
+        self.pushButton_2.setText(_translate("MainWindow", "Правила игры"))
+        self.pushButton_3.setText(_translate("MainWindow", "Выход"))
 
 
 if __name__ == "__main__":

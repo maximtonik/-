@@ -20,28 +20,6 @@
    <string>Переливание</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="Exit_to_menu">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>41</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="res-rc.qrc">:/icons/icons/exit_to_app_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -82,6 +60,9 @@ border-radius: 12px;</string>
     </property>
     <property name="text">
      <string>Выберите уровень</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="margin">
      <number>90</number>
@@ -412,38 +393,43 @@ border-radius: 12px;</string>
      <string>23</string>
     </property>
    </widget>
-   <zorder>label_2</zorder>
-   <zorder>Exit_to_menu</zorder>
-   <zorder>label_3</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>pushButton_8</zorder>
-   <zorder>pushButton_9</zorder>
-   <zorder>pushButton_10</zorder>
-   <zorder>pushButton_11</zorder>
-   <zorder>pushButton_12</zorder>
-   <zorder>pushButton_13</zorder>
-   <zorder>pushButton_14</zorder>
-   <zorder>pushButton_15</zorder>
-   <zorder>pushButton_16</zorder>
-   <zorder>pushButton_17</zorder>
-   <zorder>pushButton_18</zorder>
-   <zorder>pushButton_19</zorder>
-   <zorder>pushButton_20</zorder>
-   <zorder>pushButton_21</zorder>
-   <zorder>pushButton_22</zorder>
-   <zorder>pushButton_23</zorder>
-   <zorder>pushButton_24</zorder>
-   <zorder>pushButton_25</zorder>
+   <widget class="QPushButton" name="pushButton_27">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>540</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Fixedsys</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: black;
+background-color: rgba(255,255,255,200);
+border: 1px solid rgba(255,255,255,70);
+border-radius: 7px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,205,70);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,245,80);
+}</string>
+    </property>
+    <property name="text">
+     <string>Меню</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
-  <include location="res-rc.qrc"/>
+  <include location="res_rc.qrc"/>
  </resources>
  <connections/>
 </ui>
